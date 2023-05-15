@@ -34,7 +34,7 @@ const state = reactive({
 
 const { isCollapse } = toRefs(state);
 
-const title = ref('youlai-mall');
+const title = ref('土味商城');
 const logo = ref('https://www.youlai.tech/files/blog/logo.png');
 </script>
 

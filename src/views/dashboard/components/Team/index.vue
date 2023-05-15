@@ -3,7 +3,7 @@
   <div class="component-container">
     <el-card class="team-card">
       <template #header>
-        <span class="fw-b">有来开源组织 & 技术团队</span>
+        <span class="fw-b">中间件第十三小组</span>
       </template>
       <el-tabs v-model="teamActiveName">
         <el-tab-pane label="开发者" name="1">
@@ -39,7 +39,7 @@
                 </div>
               </li>
             </ul>
-            <el-image class="developer__indicator" :src="indicatorImgUrl" />
+            <!-- <el-image class="developer__indicator" :src="indicatorImgUrl" /> -->
           </div>
         </el-tab-pane>
 
@@ -47,13 +47,14 @@
           <div class="group">
             <el-image
               class="group-img"
-              src="https://www.youlai.tech/files/blog/youlaiqun.png"
+              src="../../../../assets/team/群聊.png"
               :preview-src-list="[
                 'https://www.youlai.tech/files/blog/youlaiqun.png'
               ]"
             />
+
             <div class="group-tip">
-              群二维码过期可添加开发者微信由其拉入群，备注「有来」即可。
+              欢迎大家入群讨论哦
             </div>
           </div>
         </el-tab-pane>
@@ -80,22 +81,34 @@ const state = reactive({
   teamActiveName: '1',
   developers: [
     {
-      imgUrl: 'https://s2.loli.net/2022/04/06/yRx8uzj4emA5QVr.jpg',
-      nickname: '郝先瑞',
+      imgUrl: '../../../../assets/team/武沛鑫.png',
+      nickname: '武沛鑫',
       positions: ['后端', '前端', '文档'],
-      homepage: 'https://www.cnblogs.com/haoxianrui/'
+      homepage: 'https://gitee.com/earthy-zinc'
     },
     {
-      imgUrl: 'https://s2.loli.net/2022/04/06/cQihGv9uPsTjXk1.jpg',
-      nickname: '张川',
+      imgUrl: '../../../../assets/team/唐朝.png',
+      nickname: '唐朝',
       positions: ['后端', '前端'],
-      homepage: 'https://blog.csdn.net/qq_41595149'
+      homepage: 'https://gitee.com/'
     },
     {
-      imgUrl: 'https://s2.loli.net/2022/04/07/2IiOYBHnRGKgCSd.jpg',
-      nickname: '张加林',
+      imgUrl: '../../../../assets/team/傅林琳.png',
+      nickname: '傅林琳',
+      positions: ['后端', '前端'],
+      homepage: 'https://gitee.com/'
+    },
+    {
+      imgUrl: '../../../../assets/team/陈秋雨.png',
+      nickname: '陈秋雨',
+      positions: ['后端', '前端'],
+      homepage: 'https://gitee.com/'
+    },
+    {
+      imgUrl: '../../../../assets/team/候天潇.png',
+      nickname: '候天潇',
       positions: ['DevOps'],
-      homepage: 'https://gitee.com/ximy'
+      homepage: 'https://gitee.com/'
     }
   ],
   colors: ['', 'success', 'warning', 'danger'],
@@ -105,6 +118,7 @@ const state = reactive({
   ).href
 });
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const { teamActiveName, developers, colors, indicatorImgUrl } = toRefs(state);
 
 let bScroll = reactive({});
@@ -152,7 +166,6 @@ watchEffect(() => {
           &:not(:first-child) {
             margin-left: 20px;
           }
-
           align-items: center;
           list-style: none;
           width: 180px;

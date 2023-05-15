@@ -276,7 +276,7 @@
 <script setup lang="ts">
 import { reactive, ref, onMounted, toRefs } from 'vue';
 
-import { Search, Plus, Edit, Refresh, Delete } from '@element-plus/icons-vue';
+import { Search, Plus, Refresh } from '@element-plus/icons-vue';
 import { ElForm, ElMessage, ElMessageBox, ElPopover } from 'element-plus';
 
 import { MenuQuery, MenuForm, Menu } from '@/api/system/menu/types';

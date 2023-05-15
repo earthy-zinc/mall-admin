@@ -18,7 +18,20 @@ import Team from './components/Team/index.vue';
   <div class="dashboard-container">
     <github-corner class="github-corner" />
 
-    <!-- 数据 -->
+    <!-- 项目 + 团队成员介绍 -->
+    <el-row :gutter="40">
+      <!-- 项目介绍 -->
+      <el-col :md="12" :lg="12" class="card-panel__col">
+        <Project />
+      </el-col>
+
+      <!-- 团队介绍 -->
+      <el-col :md="12" :lg="12" class="card-panel__col">
+        <Team />
+      </el-col>
+    </el-row>
+
+        <!-- 数据 -->
     <el-row :gutter="40" class="card-panel__col">
       <el-col :xs="24" :sm="12" :lg="6" class="card-panel__col">
         <div class="card-panel">
@@ -65,19 +78,6 @@ import Team from './components/Team/index.vue';
             <div class="card-panel-num">1000</div>
           </div>
         </div>
-      </el-col>
-    </el-row>
-
-    <!-- 项目 + 团队成员介绍 -->
-    <el-row :gutter="40">
-      <!-- 项目介绍 -->
-      <el-col :md="12" :lg="12" class="card-panel__col">
-        <Project />
-      </el-col>
-
-      <!-- 团队介绍 -->
-      <el-col :md="12" :lg="12" class="card-panel__col">
-        <Team />
       </el-col>
     </el-row>
 

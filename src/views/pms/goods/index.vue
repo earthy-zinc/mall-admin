@@ -12,10 +12,8 @@ import { useRouter } from 'vue-router';
 
 import {
   Search,
-  Edit,
   Refresh,
   Delete,
-  View,
   Plus,
 } from '@element-plus/icons-vue';
 import { listSpuPages, deleteSpu } from '@/api/pms/goods';

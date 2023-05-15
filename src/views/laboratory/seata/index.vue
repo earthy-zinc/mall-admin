@@ -368,11 +368,8 @@ onMounted(() => {
               <el-tag type="info"> 待付款 </el-tag>
               →
             </div>
-            <el-tag v-if="seataData.orderInfo.status == 2" type="success"
-              >已支付</el-tag
-            >
+            <el-tag v-if="seataData.orderInfo.status == 1" type="success">已支付</el-tag>
             <el-tag v-else type="info"> 待付款 </el-tag>
-
             <div v-if="cacheSeataData.status" style="margin-left: 50px">
               <el-link
                 v-if="cacheSeataData.status != seataData.orderInfo.status"

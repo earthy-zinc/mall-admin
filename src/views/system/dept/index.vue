@@ -16,7 +16,7 @@ import {
   listDepartments,
 } from '@/api/system/dept';
 
-import { Search, Plus, Edit, Refresh, Delete } from '@element-plus/icons-vue';
+import { Search, Plus, Refresh, Delete } from '@element-plus/icons-vue';
 import { ElForm, ElMessage, ElMessageBox } from 'element-plus';
 import { Dept, DeptForm, DeptQuery } from '@/api/system/dept/types';
 

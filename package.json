@@ -2,7 +2,7 @@
   "name": "mall-admin",
   "version": "2.1.0",
   "scripts": {
-    "dev": "vite serve --mode development",
+    "dev": "vite serve --mode development --host --port 9527",
     "build:prod": "vue-tsc --noEmit && vite build --mode production",
     "serve": "vite preview",
     "lint": "eslint src/**/*.{ts,js,vue} --fix",
