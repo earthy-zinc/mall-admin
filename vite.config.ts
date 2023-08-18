@@ -1,6 +1,7 @@
 import { UserConfig, ConfigEnv, loadEnv } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
+// @ts-ignore
 import path from 'path';
 
 // @see: https://gitee.com/holysheng/vite2-config-description/blob/master/vite.config.ts
