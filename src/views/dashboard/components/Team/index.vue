@@ -47,7 +47,7 @@
           <div class="group">
             <el-image
               class="group-img"
-              src="../../../../assets/team/群聊.png"
+              src="/team/群聊.png"
               :preview-src-list="[
                 'https://www.youlai.tech/files/blog/youlaiqun.png'
               ]"
@@ -81,32 +81,32 @@ const state = reactive({
   teamActiveName: '1',
   developers: [
     {
-      imgUrl: '../../../../assets/team/武沛鑫.png',
+      imgUrl: '/team/武沛鑫.png',
       nickname: '武沛鑫',
       positions: ['后端', '前端', '文档'],
       homepage: 'https://gitee.com/earthy-zinc'
     },
     {
-      imgUrl: '../../../../assets/team/唐朝.png',
+      imgUrl: '/team/唐朝.png',
       nickname: '唐朝',
       positions: ['后端', '前端'],
       homepage: 'https://gitee.com/'
     },
     {
-      imgUrl: '../../../../assets/team/傅林琳.png',
+      imgUrl: '/team/傅林琳.png',
       nickname: '傅林琳',
       positions: ['后端', '前端'],
       homepage: 'https://gitee.com/'
     },
     {
-      imgUrl: '../../../../assets/team/陈秋雨.png',
+      imgUrl: '/team/陈秋雨.png',
       nickname: '陈秋雨',
       positions: ['后端', '前端'],
       homepage: 'https://gitee.com/'
     },
     {
-      imgUrl: '../../../../assets/team/候天潇.png',
-      nickname: '候天潇',
+      imgUrl: '/team/侯天潇.png',
+      nickname: '侯天潇',
       positions: ['DevOps'],
       homepage: 'https://gitee.com/'
     }
