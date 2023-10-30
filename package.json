@@ -3,7 +3,7 @@
   "version": "2.1.0",
   "scripts": {
     "dev": "vite serve --mode development --host --port 9527",
-    "build:prod": "vue-tsc --noEmit && vite build --mode production",
+    "build:prod": "vite build --mode production --base=/youlai_mall",
     "serve": "vite preview",
     "lint": "eslint src/**/*.{ts,js,vue} --fix",
     "prepare": "husky install",
